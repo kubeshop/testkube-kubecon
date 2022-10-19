@@ -38,12 +38,13 @@ You'll need to pass our test details which is in our git repo:
 - your test name
 - `type`: just choose postman/collection
 - `source`: choose `Git file` as we've stored our test as exported Postman Collection
-- 
+
 
 3. Configure details and pass your contact details in form of email address as Test Variable
 
 <img width="616" alt="Zrzut ekranu 2022-10-19 o 12 22 20" src="https://user-images.githubusercontent.com/30776/196675893-c578e2e4-7837-416a-8bd6-099148180154.png">
 
+- Don't forget to hit the "Save" button
 
 4. Run the test
 
