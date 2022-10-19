@@ -14,11 +14,8 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Congratulations message!\", function () {",
-							"    console.log(\"response\", pm.response.text());",
-							"    console.log(pm.response);",
-							"",
+							"    console.log(pm.response.text());",
 							"    pm.expect(pm.response.text()).is.not.empty",
-							"",
 							"});",
 							"",
 							""
@@ -32,7 +29,7 @@
 						"exec": [
 							"pm.test(\"Request body is correct\", function () {",
 							"    let email = pm.variables.get(\"EMAIL\").trim();",
-							"    console.log(\"email\", email)",
+							"    console.log(\"your email:\", email)",
 							"    pm.expect(email).to.not.be.empty",
 							"});"
 						],
