@@ -7,12 +7,20 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Send us your email/nickname",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
+							"pm.test(\"Congratulations message!\", function () {",
+							"    console.log(\"response\", pm.response.text());",
+							"    console.log(pm.response);",
+							"",
+							"    pm.expect(pm.response.text()).is.not.empty",
+							"",
+							"});",
+							"",
 							""
 						],
 						"type": "text/javascript"
@@ -22,7 +30,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.test(\"Body is correct\", function () {",
+							"pm.test(\"Request body is correct\", function () {",
 							"    let email = pm.variables.get(\"EMAIL\").trim();",
 							"    console.log(\"email\", email)",
 							"    pm.expect(email).to.not.be.empty",
@@ -32,12 +40,20 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"email\":\"{{EMAIL}}\"}"
+					"raw": "{\"email\":\"{{EMAIL}}\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
 					"raw": "https://kubecon2022.testkube.io/testkubbers",
