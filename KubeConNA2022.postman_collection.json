@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "e3a5d04b-779f-4068-b2c3-2944c7f4470d",
+		"name": "KubeConNA2022",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3706349"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.test(\"Body is correct\", function () {",
+							"    let email = pm.variables.get(\"EMAIL\").trim();",
+							"    console.log(\"email\", email)",
+							"    pm.expect(email).to.not.be.empty",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"{{EMAIL}}\"}"
+				},
+				"url": {
+					"raw": "https://kubecon2022.testkube.io/testkubbers",
+					"protocol": "https",
+					"host": [
+						"kubecon2022",
+						"testkube",
+						"io"
+					],
+					"path": [
+						"testkubbers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "EMAIL",
+			"value": "\n",
+			"type": "string"
+		}
+	]
+}
