@@ -14,8 +14,9 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Congratulations message!\", function () {",
-							"    console.log(pm.response.text());",
 							"    pm.expect(pm.response.text()).is.not.empty",
+							"    pm.response.to.have.status(200);",
+							"    console.log(pm.response.text());",
 							"});",
 							"",
 							""
@@ -27,7 +28,7 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"pm.test(\"Request body is correct\", function () {",
+							"pm.test(\"Email is passed\", function () {",
 							"    let email = pm.variables.get(\"EMAIL\").trim();",
 							"    console.log(\"your email:\", email)",
 							"    pm.expect(email).to.not.be.empty",
