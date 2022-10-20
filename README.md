@@ -23,7 +23,7 @@ It's not so simple to get our Plushie, you need to complete the challenge first!
 2. You can do it on your local Testkube cluster 
    or on our demo server using UI
 3. You'll need to run test and pass your email address as EMAIL variable
-4. Test will call our service with requested email and our Team in the booth will be able to check if challenge was completed (you'll be asked about passed email address).
+4. Test will call our service with requested email and our Team in the booth will be able to check if challenge was completed (you'll be asked for passed email address).
 
 
 Simple ;) 
