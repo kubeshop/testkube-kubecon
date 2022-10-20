@@ -26,3 +26,5 @@ It's not so simple to get our Plushie, you need to complete the challenge first!
 4. Test will call our service with requested email and our Team in the booth will be able to check if challenge was completed (you'll be asked for passed email address).
 
 PRO TIP: Our service sucks! So 20% requests are 200s 😈
+
+Need help getting this done? 🚑 Come to our booth and watch our demo!
