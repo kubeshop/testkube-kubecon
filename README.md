@@ -53,9 +53,10 @@ You'll need to pass our test details which is in our git repo:
 - Don't forget to hit the "Save" button
 
 4. Run the test
-5. Visit us in our booth and check if there are still plushies left!
 
 <img width="1559" alt="image" src="https://user-images.githubusercontent.com/30776/196677715-17bec406-74a2-4a8a-93ab-e2ef616e6f82.png">
+
+5. Visit us in our booth and check if there are still plushies left!
 
 ## (Option 2) Run it in your Testkube cluster
 
