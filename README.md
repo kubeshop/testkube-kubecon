@@ -2,16 +2,22 @@
 
 Resources for KubeCon NA 2022 - for free Testkube Plushies giveaway! 
 
-## Free Plushies
+# Free Plushies
 
 Our team prepared some freebies to give away between stickers and T-shirts you can also find out our great Kubepeople Plushies
 just like this one: 
 
-## How can I get it? 
+![Testkube-Kubeperson](https://user-images.githubusercontent.com/30776/196876546-3e1a095e-c7a9-42f5-9f15-f0995649af11.png)
+
+
+We have around 50 plushies to give away - so there is one rule: first come first served!
+
+
+# How can I get it? 
 
 It's not so simple to get our Plushie, you need to complete the challenge first! 
 
-### The challenge! 
+## The challenge! 
 
 1. You'll need to create the Testkube based test first.
 2. You can do it on your local Testkube cluster 
@@ -22,7 +28,7 @@ It's not so simple to get our Plushie, you need to complete the challenge first!
 
 Simple ;) 
 
-### How to add test using our demo cluster? 
+## (Option 1) How to add test using our demo cluster? 
 
 
 
@@ -47,5 +53,24 @@ You'll need to pass our test details which is in our git repo:
 - Don't forget to hit the "Save" button
 
 4. Run the test
+5. Visit us in our booth and check if there are still plushies left!
 
 <img width="1559" alt="image" src="https://user-images.githubusercontent.com/30776/196677715-17bec406-74a2-4a8a-93ab-e2ef616e6f82.png">
+
+## (Option 2) Run it in your Testkube cluster
+
+1. Follow Testkube installations instructions at: https://kubeshop.github.io/testkube/installing
+3. Create test with Testkube CLI
+```sh
+testkube create test --name MY_TEST_NAME --git-uri https://github.com/kubeshop/testkube-NAKubecon22-FreePlushie.git --git-path test.json --type postman/collection --test-content-type git-file --variable EMAIL="MY_EMAIL_ADDRESS"
+``` 
+replace `MY_TEST_NAME` and `MY_EMAIL_ADDRESS` with yours.
+
+3. Run test with Testkube CLI
+```sh
+testkube run test -f MY_TEST_NAME
+``` 
+4. Visit us in our booth!
+
+
+
