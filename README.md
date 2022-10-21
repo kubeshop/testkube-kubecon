@@ -7,7 +7,7 @@ Resources for KubeCon NA 2022 - for free Testkube Plushies giveaway!
 Our team prepared some freebies to give away between stickers and T-shirts you can also find out our great Kubepeople Plushies
 just like this one: 
 
-![plushie](https://user-images.githubusercontent.com/30776/197131660-30f0ba47-7134-4530-9ab5-54dad7cea705.jpg)
+<img src="https://user-images.githubusercontent.com/30776/197131660-30f0ba47-7134-4530-9ab5-54dad7cea705.jpg" title="PLushie" style="width:400px">
 
 
 We have around 50 plushies to give away - so there is one rule: first come first served!
