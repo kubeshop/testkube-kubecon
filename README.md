@@ -18,8 +18,10 @@ It's not so simple to get our Plushie, you need to complete the challenge first!
 
 ## 🏆🏆 The challenge! 🏆🏆
 
-1. You'll need to create the Testkube based test first. `https://github.com/kubeshop/testkube-NAKubecon22-FreePlushie/blob/main/test.json`
-2. You can do it on your local Testkube cluster 
+1. You'll need to create the Testkube based test first. 
+2. Test content is here: `https://github.com/kubeshop/testkube-NAKubecon22-FreePlushie/blob/main/test.json`
+3. It's `postman/collection` test type
+4. You can do it on your local Testkube cluster 
    or on our demo server using UI (https://demo.testkube.io)
 3. You'll need to run test and pass your email address as EMAIL variable
 4. Test will call our service with requested email and our Team in the booth will be able to check if challenge was completed (you'll be asked for passed email address).
