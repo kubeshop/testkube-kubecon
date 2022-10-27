@@ -18,6 +18,7 @@ It's not so simple to get our Plushie, you need to complete the challenge first!
 
 ## 🏆🏆 The challenge! 🏆🏆
 
+0. Give us a ⭐️ on `Testkube` [repository](https://github.com/kubeshop/testkube).  
 1. You'll need to create the Testkube based test first. 
 2. Test content is here: `https://github.com/kubeshop/testkube-NAKubecon22-FreePlushie/blob/main/test.json`
 3. It's `postman/collection` test type
