@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
+	"time"
 )
 
 func main() {
@@ -14,7 +16,7 @@ func main() {
 		name = "Kubecon User"
 	}
 
-	fmt.Printf(`
+	text := fmt.Sprintf(`
   .////////////////////////////////////* 
 (((///(((((((((((((((//(((((((((((((((/ 
 (((///(((((((((((((/(((((/((((((((((((/ 
@@ -30,12 +32,18 @@ func main() {
        (((((((((((((  ((((((((           
        ,((((((((((((   (((((((           
             (((((                  
-                                                                            
+
+	 
 Thanks %s for trying TestKube Cloud!
 
 Check if there are still some plushies 
 available in Testkube booth!
-
 	`, name)
 
+	lines := strings.Split(text, "\n")
+
+	for _, line := range lines {
+		fmt.Println(line)
+		time.Sleep(time.Second)
+	}
 }
